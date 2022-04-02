@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	height: 100vh;
+	width: 100%;
+	padding: 0 8%;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 3%;
+	z-index: 1000;
+	transform: translate(-50%);
+}
+._header_btn {
+	background: rgb(59, 176, 244);
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+._header_btn:hover {
+	background: rgb(32, 145, 176);
+	transition: 0.3s;
+}
+
+._header_label {
+	color: #fff;
+	padding-left: 20px;
+}
+
+._header_btn.all_towns {
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+}
+
+.header_select {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	max-width: 900px;
+	transform: translate(-50%, -40%);
+	text-align: center;
+	color: #fff;
+}
+.header_select h1 {
+	font-size: 45px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+.header_select._select_item {
+	background: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+}
+._select_item {
+	flex: 1;
+	border: none;
+	outline: none;
+	padding: 0 20px;
+	font-size: 18px;
+}
+.back_video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+/* card for daily weather*/
+
+.title {
+	color: rgb(5, 67, 126);
+	margin-top: 30px;
+}
+
+.title h1 {
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.title p {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.card {
+	width: 320px;
+	height: 440px;
+	border-radius: 4px;
+	background: rgb(107, 199, 251);
+	margin: 10px;
+}
+
+.card_title {
+	width: 100%;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 700;
+	background: rgb(84, 188, 248);
+	padding: 0px 10px;
+	color: #fff;
+	border-radius: 4px;
+}
+.card_title_city {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.img_box {
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img_box img {
+	width: 100%;
+	height: 100%;
+}
+
+.temp_daily {
+	font-size: 55px;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+
+.temp_daily_night {
+	font-size: 25px;
+	margin: 0;
+	font-weight: 600;
+	color: rgb(101, 101, 101);
+	text-align: center;
+}
+
+.weather_details {
+	color: #fff;
+	font-size: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box_details div {
+	text-align: center;
+}
+
+.box_details_item {
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+}
+.box_details p {
+	font-size: 14px;
+	text-align: center;
+}
+/* Current card*/
+
+.container_current {
+	display: flex;
+	justify-content: center;
+}
+
+.container_daily {
+	display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	justify-content: center;
+	justify-items: center;
+}
+
+.current_weather {
+	width: 900px;
+	height: 300px;
+	border-radius: 4px;
+	margin: auto;
+	display: flex;
+	color: #fff;
+	background: rgb(84, 188, 248);
+	margin: 50px;
+}
+
+/*Title*/
+.currenr_main_title {
+	text-align: center;
+	margin: 30px 0;
+	color: rgb(31, 66, 190);
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.current_titles {
+	width: 40%;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.current_titles h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.current_titles h2 {
+	font-size: 18px;
+	margin-top: 16px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 500;
+}
+
+.icon_wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	margin-top: 25px;
+}
+
+.wrap_title {
+	padding: 10px;
+}
+
+.current_icon {
+	margin: 10px 0px;
+}
+
+.current_icon p {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+/*Icon*/
+.current_icons {
+	width: 180px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.temp {
+	height: 40%;
+	font-size: 65px;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.minmax {
+	font-size: 16px;
+	font-weight: 500;
+	text-align: right;
+	margin-right: 30px;
+}
+
+.icons_img {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icons_img img {
+	width: auto;
+	height: 100%;
+}
+
+/*Image*/
+.current_images {
+	width: 40%;
+	height: 100%;
+	background-image: url('../img/map2.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

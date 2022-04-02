@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" type="image/png" href="./img/ic.png" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&  family=Raleway:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<title>Title</title>
+	</head>
+	<body>
+		<div id="root">
+			<div class="wrapper">
+				<div class="header">
+					<video autoplay loop class="back_video" muted plays-inline>
+						<source src="./media/sky.mp4" type="video/mp4" />
+					</video>
+					<div class="logo">
+						<img src="../src/img/logo.svg" alt="img" />
+					</div>
+					<div class="header_select">
+						<h1>Weather in all cities of Belarus</h1>
+						<form name="locationControls">
+							<div class="input-field _select_item">
+								<i class="material-icons prefix">textsms</i>
+								<input type="text" id="autocomplete-input" class="autocomplete" />
+								<label class="_header_label" for="autocomplete-input"></label>
+							</div>
+							<button type="submit" class="_header_btn">Show the weather</button>
+						</form>
+					</div>
+				</div>
+				<div class="container_current"></div>
+				<div class="container_daily"></div>
+			</div>
+		</div>
+	</body>
+</html>

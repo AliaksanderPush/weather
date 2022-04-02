@@ -1,0 +1,47 @@
+{
+	"name": "progect-aviatickets",
+	"version": "1.0.0",
+	"description": "java script",
+	"main": "index.js",
+	"scripts": {
+		"start": "set NODE_ENV=development&&webpack serve --open",
+		"build": "set NODE_ENV=production&&webpack ",
+		"dev": "set NODE_ENV=development&&webpack"
+	},
+	"browsersdivst": [
+		"last 2 versions",
+		"> 1%",
+		"IE 10"
+	],
+	"author": "Pushnov Adivaksandr",
+	"divcense": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.17.8",
+		"@babel/plugin-proposal-class-properties": "^7.16.7",
+		"@babel/preset-env": "^7.16.11",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.2.4",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"clean-webpack-plugin": "^4.0.0",
+		"cross-env": "^7.0.3",
+		"css-loader": "^6.5.1",
+		"file-loader": "^6.2.0",
+		"html-loader": "^3.0.1",
+		"html-webpack-plugin": "^5.5.0",
+		"mini-css-extract-plugin": "^2.4.5",
+		"node-sass": "^6.0.1",
+		"postcss-loader": "^6.2.1",
+		"postcss-preset-env": "^7.0.1",
+		"sass-loader": "^12.3.0",
+		"style-loader": "^3.3.1",
+		"svgo-loader": "^3.0.0",
+		"webpack": "^5.64.4",
+		"webpack-cli": "^4.9.1",
+		"webpack-dev-server": "^4.6.0"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.12.1",
+		"axios": "^0.26.1",
+		"materialize-css": "^1.0.0-rc.2"
+	}
+}
