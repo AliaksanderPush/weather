@@ -1,9 +1,8 @@
 import { api } from '../service/Api';
-import { cities } from '../../locationCitys/locationCityes';
 
 export default class Storage {
-	constructor(api, cities) {
-		this.cities = cities[0].regions;
+	constructor(api) {
+		this.cities = null;
 		this.api = api;
 		this.cityWeather = null;
 		this.cityOnly = null;
@@ -11,6 +10,7 @@ export default class Storage {
 	}
 
 	async init() {
+		this.cities = await this.getCityOfBelarus();
 		this.cityWithAreas = this.serelizeListCity(this.cities);
 		this.cityWeather = this.serilizeByCity(this.cityWithAreas);
 		this.shortlist = this.createShortCityList(this.cityWeather);
@@ -19,7 +19,6 @@ export default class Storage {
 	async getCityWeather(key) {
 		const coord = this.cityWeather[key];
 		const { lat, lng } = coord;
-
 		const response = await api.getWheather(lat, lng);
 		const serelizeResponce = {
 			current: response.current,
@@ -27,6 +26,11 @@ export default class Storage {
 		};
 
 		return serelizeResponce;
+	}
+
+	async getCityOfBelarus() {
+		const responce = await api.getCity();
+		return responce[0].regions;
 	}
 
 	serilizeByAreas(areas) {
@@ -78,4 +82,4 @@ export default class Storage {
 	}
 }
 
-export const storage = new Storage(api, cities);
+export const storage = new Storage(api);

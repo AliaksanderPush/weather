@@ -1,6 +1,7 @@
 import { storage } from './storage/Storage';
 import Weather from './app/Weather';
 import inputUI from './views/InputUI';
+import { scrollToBottom } from './helpers/helper';
 import './plagins';
 import '../css/style.css';
 
@@ -22,5 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		const responce = await storage.getCityWeather(data);
 		const weather = new Weather(responce, data);
 		weather.start();
+		scrollToBottom();
 	}
 });

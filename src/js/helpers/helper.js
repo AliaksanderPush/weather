@@ -1,3 +1,11 @@
+export const scrollToBottom = () => {
+	const element = document.getElementById('element-selector');
+	element.scrollIntoView({
+		behavior: 'smooth',
+		block: 'start',
+	});
+};
+
 export function formatDateTime(dt) {
 	const year = dt.getFullYear();
 	const month = dt.getMonth() + 1;

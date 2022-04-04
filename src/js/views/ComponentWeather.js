@@ -109,7 +109,7 @@ export default class ComponentWeather {
 		const { sunrise, sunset, pressure, wind_speed, temp, humidity } = params;
 		return `
     
-    <div class="current_weather_container">
+    <div id="element-selector" class="current_weather_container">
     <h1 class="currenr_main_title">The weather is now</h1>
     <div class="current_weather">
       <div class="current_titles">
